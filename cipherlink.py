@@ -125,14 +125,6 @@ def configure_widget(widget, font=('Helvetica', 10, 'bold'), bg='black', fg='whi
     if isinstance(widget, tk.Entry):
         widget.configure(insertbackground='white')
 
-mode_label = tk.Label(root, text="0xCipherLink by 0x4m4", font=('Helvetica', 16, 'bold'))
-configure_widget(mode_label)
-mode_label.pack(pady=10)
-
-website_label = tk.Label(root, text="www.0x4m4.com", font=('Helvetica', 10, 'italic'))
-configure_widget(website_label, font=('Helvetica', 10, 'italic'))
-website_label.pack(pady=5)
-
 mode_var = tk.StringVar(value="send")
 send_radio = tk.Radiobutton(root, text="Send", variable=mode_var, value="send", selectcolor='black')
 configure_widget(send_radio)
