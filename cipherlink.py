@@ -1,7 +1,3 @@
-# 0xCipherLink by 0x4m4
-# Secure File Transfer Tool
-# www.0x4m4.com
-
 import tkinter as tk
 from tkinter import filedialog
 import socket
